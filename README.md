@@ -185,47 +185,29 @@ JWT_SECRET=your_secret_key
 
 ---
 
-# 📷 Screenshots
+# Screenshots
 
 ## Login
 
-(Add Screenshot)
-
----
-
-## Register
-
-(Add Screenshot)
+![Login](assets/login.png)
 
 ---
 
 ## Dashboard
 
-(Add Screenshot)
-
----
-
-## Task Manager
-
-(Add Screenshot)
+![Dashboard](assets/dashboard.png)
 
 ---
 
 ## Analytics
 
-(Add Screenshot)
+![Analytics](assets/analytics.png)
 
 ---
 
 ## Calendar
 
-(Add Screenshot)
-
----
-
-## Settings
-
-(Add Screenshot)
+![Calendar](assets/calendar.png)
 
 ---
 
