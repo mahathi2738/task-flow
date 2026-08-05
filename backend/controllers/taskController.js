@@ -1,8 +1,5 @@
 import pool from "../config/db.js";
-
-// ==========================
 // Create Task
-// ==========================
 export const createTask = async (req, res) => {
   try {
     const {
