@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { FaBell, FaSearch, FaBars } from "react-icons/fa";
 import { useTheme } from "../../context/ThemeContext";
 import { useState } from "react";
 
 function Navbar({ toggleSidebar }) {
+  const navigate = useNavigate();
   const { darkMode, toggleTheme } = useTheme();
 
   const [showNotifications, setShowNotifications] = useState(false);
@@ -15,10 +17,10 @@ function Navbar({ toggleSidebar }) {
     "🔥 Keep your productivity streak alive!",
   ];
 
-  const logout = () => {
-    localStorage.removeItem("token");
-    window.location.href = "/login";
-  };
+  const handleLogout = () => {
+  localStorage.removeItem("token");
+  navigate("/login");
+};
 
   return (
     <motion.nav
@@ -126,7 +128,7 @@ function Navbar({ toggleSidebar }) {
               </button>
 
               <button
-                onClick={logout}
+  onClick={handleLogout}
                 className="w-full text-left px-4 py-3 text-red-500 hover:bg-red-50 dark:hover:bg-red-900"
               >
                 🚪 Logout
